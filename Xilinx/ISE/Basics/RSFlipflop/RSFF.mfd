@@ -1,0 +1,37 @@
+MDF Database:  version 1.0
+MDF_INFO | RSFF | XA9536XL-15-VQ44
+MACROCELL | 0 | 1 | Q_OBUF
+ATTRIBUTES | 8815507 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 5 | Q  | R  | S  | set  | reset
+INPUTMC | 1 | 0 | 1
+INPUTP | 4 | 44 | 45 | 47 | 42
+EQ | 5 | 
+   Q.D = S
+	# Q & R;
+   Q.CLK = clk;	// GCK
+   Q.AP = set;
+   Q.AR = !set & reset;
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 1 | Qn_OBUF
+ATTRIBUTES | 8815507 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 5 | Qn  | S  | R  | reset  | set
+INPUTMC | 1 | 1 | 1
+INPUTP | 4 | 45 | 44 | 42 | 47
+EQ | 5 | 
+   Qn.D = Qn & !S
+	# !S & !R;
+   Qn.CLK = clk;	// GCK
+   Qn.AP = reset;
+   Qn.AR = set;
+GLOBALS | 1 | 2 | clk
+
+PIN | clk | 4096 | 0 | N/A | 10 | 2 | 0 | 1 | 1 | 1
+PIN | set | 64 | 0 | N/A | 47 | 2 | 0 | 1 | 1 | 1
+PIN | reset | 64 | 0 | N/A | 42 | 2 | 0 | 1 | 1 | 1
+PIN | R | 64 | 0 | N/A | 44 | 2 | 0 | 1 | 1 | 1
+PIN | S | 64 | 0 | N/A | 45 | 2 | 0 | 1 | 1 | 1
+PIN | Q | 536871040 | 0 | N/A | 8
+PIN | Qn | 536871040 | 0 | N/A | 5

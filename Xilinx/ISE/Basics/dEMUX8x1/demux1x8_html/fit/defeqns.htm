@@ -1,0 +1,51 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+FDCPE_o0: FDCPE port map (o(0),'0','0',o_CLR(0),o_PRE(0));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o_CLR(0) <= (NOT s(2) AND NOT s(1) AND NOT s(0) AND NOT i);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o_PRE(0) <= (NOT s(2) AND NOT s(1) AND NOT s(0) AND i);
+</td></tr><tr><td>
+FDCPE_o1: FDCPE port map (o(1),'0','0',o_CLR(1),o_PRE(1));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o_CLR(1) <= (NOT s(2) AND NOT s(1) AND s(0) AND NOT i);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o_PRE(1) <= (NOT s(2) AND NOT s(1) AND s(0) AND i);
+</td></tr><tr><td>
+FDCPE_o2: FDCPE port map (o(2),'0','0',o_CLR(2),o_PRE(2));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o_CLR(2) <= (NOT s(2) AND s(1) AND NOT s(0) AND NOT i);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o_PRE(2) <= (NOT s(2) AND s(1) AND NOT s(0) AND i);
+</td></tr><tr><td>
+FDCPE_o3: FDCPE port map (o(3),'0','0',o_CLR(3),o_PRE(3));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o_CLR(3) <= (NOT s(2) AND s(1) AND s(0) AND NOT i);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o_PRE(3) <= (NOT s(2) AND s(1) AND s(0) AND i);
+</td></tr><tr><td>
+FDCPE_o4: FDCPE port map (o(4),'0','0',o_CLR(4),o_PRE(4));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o_CLR(4) <= (s(2) AND NOT s(1) AND NOT s(0) AND NOT i);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o_PRE(4) <= (s(2) AND NOT s(1) AND NOT s(0) AND i);
+</td></tr><tr><td>
+FDCPE_o5: FDCPE port map (o(5),'0','0',o_CLR(5),o_PRE(5));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o_CLR(5) <= (s(2) AND NOT s(1) AND s(0) AND NOT i);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o_PRE(5) <= (s(2) AND NOT s(1) AND s(0) AND i);
+</td></tr><tr><td>
+FDCPE_o6: FDCPE port map (o(6),'0','0',o_CLR(6),o_PRE(6));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o_CLR(6) <= (s(2) AND s(1) AND NOT s(0) AND NOT i);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o_PRE(6) <= (s(2) AND s(1) AND NOT s(0) AND i);
+</td></tr><tr><td>
+FDCPE_o7: FDCPE port map (o(7),'0','0',o_CLR(7),o_PRE(7));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o_CLR(7) <= (s(2) AND s(1) AND s(0) AND NOT i);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o_PRE(7) <= (s(2) AND s(1) AND s(0) AND i);
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

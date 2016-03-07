@@ -1,0 +1,7 @@
+V3 3
+FL D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.vhd 2013/05/02.18:43:07 J.36
+EN work/SR_flipflop 1367500436 FL D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.vhd \
+      PB ieee/std_logic_1164 1177545575 PB ieee/std_logic_arith 1177545576 \
+      PB ieee/STD_LOGIC_UNSIGNED 1177545583
+AR work/SR_flipflop/Behavioral 1367500437 \
+      FL D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.vhd EN work/SR_flipflop 1367500436

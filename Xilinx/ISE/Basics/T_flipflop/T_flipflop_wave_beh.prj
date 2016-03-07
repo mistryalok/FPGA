@@ -1,0 +1,2 @@
+vhdl work "T_flipflop.vhd"
+vhdl work "T_flipflop_wave.vhw"

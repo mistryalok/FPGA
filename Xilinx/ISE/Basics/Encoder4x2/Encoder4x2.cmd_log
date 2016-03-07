@@ -1,0 +1,8 @@
+xst -ise "D:/Aalok/Xilinx/Encoder4x2/Encoder4x2.ise" -intstyle ise -ifn Encoder4x2.xst -ofn Encoder4x2.syr
+xst -ise "D:/Aalok/Xilinx/Encoder4x2/Encoder4x2.ise" -intstyle ise -ifn Encoder4x2.xst -ofn Encoder4x2.syr
+ngdbuild -ise "D:/Aalok/Xilinx/Encoder4x2/Encoder4x2.ise" -intstyle ise -dd _ngo -i -p xa9500xl "Encoder4x2.ngc" Encoder4x2.ngd
+cpldfit -ise "D:/Aalok/Xilinx/Encoder4x2/Encoder4x2.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper Encoder4x2.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/Encoder4x2/Encoder4x2.ise" Encoder4x2_build.xml
+tsim -ise "D:/Aalok/Xilinx/Encoder4x2/Encoder4x2.ise" -intstyle ise Encoder4x2 Encoder4x2.nga
+taengine -ise "D:/Aalok/Xilinx/Encoder4x2/Encoder4x2.ise" -intstyle ise -f Encoder4x2 -w --format html1 -l D:/Aalok/Xilinx/Encoder4x2/Encoder4x2_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/Encoder4x2/Encoder4x2.ise" -s IEEE1149 -i Encoder4x2

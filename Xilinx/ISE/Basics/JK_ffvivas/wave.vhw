@@ -1,0 +1,94 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) 1995-2007 Xilinx, Inc.
+-- All Right Reserved.
+--------------------------------------------------------------------------------
+--   ____  ____ 
+--  /   /\/   / 
+-- /___/  \  /    Vendor: Xilinx 
+-- \   \   \/     Version : 9.2i
+--  \   \         Application : ISE
+--  /   /         Filename : wave.vhw
+-- /___/   /\     Timestamp : Wed May 22 21:51:28 2013
+-- \   \  /  \ 
+--  \___\/\___\ 
+--
+--Command: 
+--Design Name: wave
+--Device: Xilinx
+--
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY wave IS
+END wave;
+
+ARCHITECTURE testbench_arch OF wave IS
+    FILE RESULTS: TEXT OPEN WRITE_MODE IS "results.txt";
+
+    COMPONENT JKS
+        PORT (
+            J : In std_logic;
+            K : In std_logic;
+            Q : InOut std_logic;
+            QN : InOut std_logic;
+            CLK : In std_logic
+        );
+    END COMPONENT;
+
+    SIGNAL J : std_logic := '0';
+    SIGNAL K : std_logic := '0';
+    SIGNAL Q : std_logic := 'Z';
+    SIGNAL QN : std_logic := 'Z';
+    SIGNAL CLK : std_logic := '0';
+
+    constant PERIOD : time := 200 ns;
+    constant DUTY_CYCLE : real := 0.5;
+    constant OFFSET : time := 100 ns;
+
+    BEGIN
+        UUT : JKS
+        PORT MAP (
+            J => J,
+            K => K,
+            Q => Q,
+            QN => QN,
+            CLK => CLK
+        );
+
+        PROCESS    -- clock process for CLK
+        BEGIN
+            WAIT for OFFSET;
+            CLOCK_LOOP : LOOP
+                CLK <= '0';
+                WAIT FOR (PERIOD - (PERIOD * DUTY_CYCLE));
+                CLK <= '1';
+                WAIT FOR (PERIOD * DUTY_CYCLE);
+            END LOOP CLOCK_LOOP;
+        END PROCESS;
+
+        PROCESS
+            BEGIN
+                -- -------------  Current Time:  185ns
+                WAIT FOR 185 ns;
+                J <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  385ns
+                WAIT FOR 200 ns;
+                J <= '0';
+                K <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  585ns
+                WAIT FOR 200 ns;
+                K <= '0';
+                -- -------------------------------------
+                WAIT FOR 615 ns;
+
+            END PROCESS;
+
+    END testbench_arch;
+

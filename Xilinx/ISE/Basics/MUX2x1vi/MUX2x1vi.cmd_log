@@ -1,0 +1,15 @@
+xst -ise "D:/Aalok/Xilinx/MUX2x1vi/MUX2x1vi.ise" -intstyle ise -ifn MUX2x1vi.xst -ofn MUX2x1vi.syr
+ngdbuild -ise "D:/Aalok/Xilinx/MUX2x1vi/MUX2x1vi.ise" -intstyle ise -dd _ngo -i -p xa9500xl "MUX2x1vi.ngc" MUX2x1vi.ngd
+cpldfit -ise "D:/Aalok/Xilinx/MUX2x1vi/MUX2x1vi.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper MUX2x1vi.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/MUX2x1vi/MUX2x1vi.ise" MUX2x1vi_build.xml
+tsim -ise "D:/Aalok/Xilinx/MUX2x1vi/MUX2x1vi.ise" -intstyle ise MUX2x1vi MUX2x1vi.nga
+taengine -ise "D:/Aalok/Xilinx/MUX2x1vi/MUX2x1vi.ise" -intstyle ise -f MUX2x1vi -w --format html1 -l D:/Aalok/Xilinx/MUX2x1vi/MUX2x1vi_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/MUX2x1vi/MUX2x1vi.ise" -s IEEE1149 -i MUX2x1vi
+xst -ise "D:/Aalok/Xilinx/MUX2x1vi/MUX2x1vi.ise" -intstyle ise -ifn MUX2x1vi.xst -ofn MUX2x1vi.syr
+xst -ise "D:/Aalok/Xilinx/MUX2x1vi/MUX2x1vi.ise" -intstyle ise -ifn MUX2x1vi.xst -ofn MUX2x1vi.syr
+ngdbuild -ise "D:/Aalok/Xilinx/MUX2x1vi/MUX2x1vi.ise" -intstyle ise -dd _ngo -i -p xa9500xl "MUX2x1vi.ngc" MUX2x1vi.ngd
+cpldfit -ise "D:/Aalok/Xilinx/MUX2x1vi/MUX2x1vi.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper MUX2x1vi.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/MUX2x1vi/MUX2x1vi.ise" MUX2x1vi_build.xml
+tsim -ise "D:/Aalok/Xilinx/MUX2x1vi/MUX2x1vi.ise" -intstyle ise MUX2x1vi MUX2x1vi.nga
+taengine -ise "D:/Aalok/Xilinx/MUX2x1vi/MUX2x1vi.ise" -intstyle ise -f MUX2x1vi -w --format html1 -l D:/Aalok/Xilinx/MUX2x1vi/MUX2x1vi_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/MUX2x1vi/MUX2x1vi.ise" -s IEEE1149 -i MUX2x1vi

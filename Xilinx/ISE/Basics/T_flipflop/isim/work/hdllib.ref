@@ -1,0 +1,6 @@
+EN t_flipflop_wave NULL D:/Aalok/Xilinx/T_flipflop/T_flipflop_wave.vhw sub00/vhpl02 1367502379
+AR t_flipflop behavioral D:/Aalok/Xilinx/T_flipflop/T_flipflop.vhd sub00/vhpl01 1367502635
+EN t_flipflop NULL D:/Aalok/Xilinx/T_flipflop/T_flipflop.vhd sub00/vhpl00 1367502634
+AR asdf testbench_arch D:/Aalok/Xilinx/T_flipflop/asdf.vhw sub00/vhpl05 1367502658
+AR t_flipflop_wave testbench_arch D:/Aalok/Xilinx/T_flipflop/T_flipflop_wave.vhw sub00/vhpl03 1367502380
+EN asdf NULL D:/Aalok/Xilinx/T_flipflop/asdf.vhw sub00/vhpl04 1367502657

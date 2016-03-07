@@ -1,0 +1,21 @@
+xst -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" -intstyle ise -ifn demux1x8.xst -ofn demux1x8.syr
+ngdbuild -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "demux1x8.ngc" demux1x8.ngd
+cpldfit -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper demux1x8.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" demux1x8_build.xml
+tsim -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" -intstyle ise demux1x8 demux1x8.nga
+taengine -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" -intstyle ise -f demux1x8 -w --format html1 -l D:/Aalok/Xilinx/dEMUX8x1/demux1x8_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" -s IEEE1149 -i demux1x8
+xst -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" -intstyle ise -ifn demux1x8.xst -ofn demux1x8.syr
+ngdbuild -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "demux1x8.ngc" demux1x8.ngd
+cpldfit -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper demux1x8.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" demux1x8_build.xml
+tsim -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" -intstyle ise demux1x8 demux1x8.nga
+taengine -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" -intstyle ise -f demux1x8 -w --format html1 -l D:/Aalok/Xilinx/dEMUX8x1/demux1x8_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" -s IEEE1149 -i demux1x8
+xst -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" -intstyle ise -ifn demux1x8.xst -ofn demux1x8.syr
+ngdbuild -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "demux1x8.ngc" demux1x8.ngd
+cpldfit -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper demux1x8.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" demux1x8_build.xml
+tsim -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" -intstyle ise demux1x8 demux1x8.nga
+taengine -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" -intstyle ise -f demux1x8 -w --format html1 -l D:/Aalok/Xilinx/dEMUX8x1/demux1x8_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/dEMUX8x1/dEMUX8x1.ise" -s IEEE1149 -i demux1x8

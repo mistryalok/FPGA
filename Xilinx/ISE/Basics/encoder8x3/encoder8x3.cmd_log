@@ -1,0 +1,4 @@
+xst -ise "D:/Aalok/Xilinx/encoder8x3/encoder8x3.ise" -intstyle ise -ifn encoder8x3.xst -ofn encoder8x3.syr
+xst -ise "D:/Aalok/Xilinx/encoder8x3/encoder8x3.ise" -intstyle ise -ifn encoder8x3.xst -ofn encoder8x3.syr
+xst -ise "D:/Aalok/Xilinx/encoder8x3/encoder8x3.ise" -intstyle ise -ifn encoder8x3.xst -ofn encoder8x3.syr
+xst -ise "D:/Aalok/Xilinx/encoder8x3/encoder8x3.ise" -intstyle ise -ifn encoder8x3.xst -ofn encoder8x3.syr

@@ -1,0 +1,11 @@
+xst -ise "D:/Aalok/Xilinx/decoder3to8/decoder3to8.ise" -intstyle ise -ifn decoder3x8.xst -ofn decoder3x8.syr
+xst -ise "D:/Aalok/Xilinx/decoder3to8/decoder3to8.ise" -intstyle ise -ifn decoder3x8.xst -ofn decoder3x8.syr
+xst -ise "D:/Aalok/Xilinx/decoder3to8/decoder3to8.ise" -intstyle ise -ifn decoder3x8.xst -ofn decoder3x8.syr
+xst -ise "D:/Aalok/Xilinx/decoder3to8/decoder3to8.ise" -intstyle ise -ifn decoder3x8.xst -ofn decoder3x8.syr
+xst -ise "D:/Aalok/Xilinx/decoder3to8/decoder3to8.ise" -intstyle ise -ifn decoder3x8.xst -ofn decoder3x8.syr
+ngdbuild -ise "D:/Aalok/Xilinx/decoder3to8/decoder3to8.ise" -intstyle ise -dd _ngo -i -p xa9500xl "decoder3x8.ngc" decoder3x8.ngd
+cpldfit -ise "D:/Aalok/Xilinx/decoder3to8/decoder3to8.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper decoder3x8.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/decoder3to8/decoder3to8.ise" decoder3x8_build.xml
+tsim -ise "D:/Aalok/Xilinx/decoder3to8/decoder3to8.ise" -intstyle ise decoder3x8 decoder3x8.nga
+taengine -ise "D:/Aalok/Xilinx/decoder3to8/decoder3to8.ise" -intstyle ise -f decoder3x8 -w --format html1 -l D:/Aalok/Xilinx/decoder3to8/decoder3x8_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/decoder3to8/decoder3to8.ise" -s IEEE1149 -i decoder3x8

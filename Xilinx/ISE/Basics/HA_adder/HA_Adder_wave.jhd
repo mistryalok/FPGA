@@ -1,0 +1,3 @@
+MODULE HA_Adder_wave
+SUBMODULE HA_adder
+INSTANCE UUT

@@ -1,0 +1,14 @@
+xst -ise "D:/Aalok/Xilinx/HA_adder/HA_adder.ise" -intstyle ise -ifn HA.xst -ofn HA.syr
+ngdbuild -ise "D:/Aalok/Xilinx/HA_adder/HA_adder.ise" -intstyle ise -dd _ngo -i -p xa9500xl "HA.ngc" HA.ngd
+cpldfit -ise "D:/Aalok/Xilinx/HA_adder/HA_adder.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper HA.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/HA_adder/HA_adder.ise" HA_build.xml
+tsim -ise "D:/Aalok/Xilinx/HA_adder/HA_adder.ise" -intstyle ise HA HA.nga
+taengine -ise "D:/Aalok/Xilinx/HA_adder/HA_adder.ise" -intstyle ise -f HA -w --format html1 -l D:/Aalok/Xilinx/HA_adder/HA_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/HA_adder/HA_adder.ise" -s IEEE1149 -i HA
+xst -ise "D:/Aalok/Xilinx/HA_adder/HA_adder.ise" -intstyle ise -ifn HA.xst -ofn HA.syr
+ngdbuild -ise "D:/Aalok/Xilinx/HA_adder/HA_adder.ise" -intstyle ise -dd _ngo -i -p xa9500xl "HA.ngc" HA.ngd
+cpldfit -ise "D:/Aalok/Xilinx/HA_adder/HA_adder.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper HA.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/HA_adder/HA_adder.ise" HA_build.xml
+tsim -ise "D:/Aalok/Xilinx/HA_adder/HA_adder.ise" -intstyle ise HA HA.nga
+taengine -ise "D:/Aalok/Xilinx/HA_adder/HA_adder.ise" -intstyle ise -f HA -w --format html1 -l D:/Aalok/Xilinx/HA_adder/HA_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/HA_adder/HA_adder.ise" -s IEEE1149 -i HA

@@ -1,0 +1,23 @@
+MDF Database:  version 1.0
+MDF_INFO | T_flipflop | XA9536XL-15-VQ44
+MACROCELL | 0 | 1 | Q_OBUF
+ATTRIBUTES | 4621059 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 0
+EQ | 2 | 
+   Q.T = Vcc;
+   Q.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 1 | Qn_OBUF
+ATTRIBUTES | 8684291 | 0
+INPUTS | 1 | Q
+INPUTMC | 1 | 0 | 1
+EQ | 2 | 
+   Qn.D = Q;
+   Qn.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+PIN | clk | 4096 | 0 | N/A | 10 | 2 | 0 | 1 | 1 | 1
+PIN | Q | 536871040 | 0 | N/A | 8
+PIN | Qn | 536871040 | 0 | N/A | 5

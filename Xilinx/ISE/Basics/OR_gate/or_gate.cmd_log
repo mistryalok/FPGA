@@ -1,0 +1,8 @@
+xst -ise "D:/Aalok/Xilinx/OR_gate/OR_gate.ise" -intstyle ise -ifn or_gate.xst -ofn or_gate.syr
+ngdbuild -ise "D:/Aalok/Xilinx/OR_gate/OR_gate.ise" -intstyle ise -dd _ngo -i -p xa9500xl "or_gate.ngc" or_gate.ngd
+cpldfit -ise "D:/Aalok/Xilinx/OR_gate/OR_gate.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper or_gate.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/OR_gate/OR_gate.ise" or_gate_build.xml
+tsim -ise "D:/Aalok/Xilinx/OR_gate/OR_gate.ise" -intstyle ise or_gate or_gate.nga
+taengine -ise "D:/Aalok/Xilinx/OR_gate/OR_gate.ise" -intstyle ise -f or_gate -w --format html1 -l D:/Aalok/Xilinx/OR_gate/or_gate_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/OR_gate/OR_gate.ise" -s IEEE1149 -i or_gate
+xst -ise "D:/Aalok/Xilinx/OR_gate/OR_gate.ise" -intstyle ise -ifn or_gate.xst -ofn or_gate.syr

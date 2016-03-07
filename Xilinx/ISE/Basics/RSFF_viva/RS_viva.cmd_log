@@ -1,0 +1,11 @@
+xst -ise "D:/Aalok/Xilinx/RSFF_viva/RSFF_viva.ise" -intstyle ise -ifn RS_viva.xst -ofn RS_viva.syr
+xst -ise "D:/Aalok/Xilinx/RSFF_viva/RSFF_viva.ise" -intstyle ise -ifn RS_viva.xst -ofn RS_viva.syr
+xst -ise "D:/Aalok/Xilinx/RSFF_viva/RSFF_viva.ise" -intstyle ise -ifn RS_viva.xst -ofn RS_viva.syr
+xst -ise "D:/Aalok/Xilinx/RSFF_viva/RSFF_viva.ise" -intstyle ise -ifn RS_viva.xst -ofn RS_viva.syr
+xst -ise "D:/Aalok/Xilinx/RSFF_viva/RSFF_viva.ise" -intstyle ise -ifn RS_viva.xst -ofn RS_viva.syr
+ngdbuild -ise "D:/Aalok/Xilinx/RSFF_viva/RSFF_viva.ise" -intstyle ise -dd _ngo -i -p xa9500xl "RS_viva.ngc" RS_viva.ngd
+cpldfit -ise "D:/Aalok/Xilinx/RSFF_viva/RSFF_viva.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper RS_viva.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/RSFF_viva/RSFF_viva.ise" RS_viva_build.xml
+tsim -ise "D:/Aalok/Xilinx/RSFF_viva/RSFF_viva.ise" -intstyle ise RS_viva RS_viva.nga
+taengine -ise "D:/Aalok/Xilinx/RSFF_viva/RSFF_viva.ise" -intstyle ise -f RS_viva -w --format html1 -l D:/Aalok/Xilinx/RSFF_viva/RS_viva_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/RSFF_viva/RSFF_viva.ise" -s IEEE1149 -i RS_viva

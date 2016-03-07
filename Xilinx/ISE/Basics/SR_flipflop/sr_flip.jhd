@@ -1,0 +1,3 @@
+MODULE sr_flip
+SUBMODULE SR_flipflop
+INSTANCE UUT

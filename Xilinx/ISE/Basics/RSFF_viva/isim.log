@@ -1,0 +1,34 @@
+ command line:
+   ./Rswave_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  1055
+
+Wed May 22 18:22:13 2013
+
+Total Line Count : 54
+
+ Elaboration time : 0 sec.
+
+ Estimate current memory usage : 117.232 Meg. 
+
+ Total Signals          : 10
+ Total Nets             : 5
+ Total Signal Drivers   : 5
+ Total Blocks           : 7
+ Total Primitive Blocks : 1
+ Total Processes        : 3
+ Total Traceable Variables  : 0
+ Total Scalar Nets and Variables : 5
+ntrace select -o on -m / -l this 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.03125 sec.
+
+ Estimate current memory usage : 125.62 Meg. 
+
+Wed May 22 18:23:53 2013
+

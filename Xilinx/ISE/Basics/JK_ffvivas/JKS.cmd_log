@@ -1,0 +1,8 @@
+xst -ise "D:/Aalok/Xilinx/JK_ffvivas/JK_ffvivas.ise" -intstyle ise -ifn JKS.xst -ofn JKS.syr
+xst -ise "D:/Aalok/Xilinx/JK_ffvivas/JK_ffvivas.ise" -intstyle ise -ifn JKS.xst -ofn JKS.syr
+ngdbuild -ise "D:/Aalok/Xilinx/JK_ffvivas/JK_ffvivas.ise" -intstyle ise -dd _ngo -i -p xa9500xl "JKS.ngc" JKS.ngd
+cpldfit -ise "D:/Aalok/Xilinx/JK_ffvivas/JK_ffvivas.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper JKS.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/JK_ffvivas/JK_ffvivas.ise" JKS_build.xml
+tsim -ise "D:/Aalok/Xilinx/JK_ffvivas/JK_ffvivas.ise" -intstyle ise JKS JKS.nga
+taengine -ise "D:/Aalok/Xilinx/JK_ffvivas/JK_ffvivas.ise" -intstyle ise -f JKS -w --format html1 -l D:/Aalok/Xilinx/JK_ffvivas/JKS_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/JK_ffvivas/JK_ffvivas.ise" -s IEEE1149 -i JKS

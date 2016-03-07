@@ -1,0 +1,7 @@
+xst -ise "D:/Aalok/Xilinx/HA_adderVIVA/HA_adderVIVA.ise" -intstyle ise -ifn HA_adder.xst -ofn HA_adder.syr
+ngdbuild -ise "D:/Aalok/Xilinx/HA_adderVIVA/HA_adderVIVA.ise" -intstyle ise -dd _ngo -i -p xa9500xl "HA_adder.ngc" HA_adder.ngd
+cpldfit -ise "D:/Aalok/Xilinx/HA_adderVIVA/HA_adderVIVA.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper HA_adder.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/HA_adderVIVA/HA_adderVIVA.ise" HA_adder_build.xml
+tsim -ise "D:/Aalok/Xilinx/HA_adderVIVA/HA_adderVIVA.ise" -intstyle ise HA_adder HA_adder.nga
+taengine -ise "D:/Aalok/Xilinx/HA_adderVIVA/HA_adderVIVA.ise" -intstyle ise -f HA_adder -w --format html1 -l D:/Aalok/Xilinx/HA_adderVIVA/HA_adder_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/HA_adderVIVA/HA_adderVIVA.ise" -s IEEE1149 -i HA_adder

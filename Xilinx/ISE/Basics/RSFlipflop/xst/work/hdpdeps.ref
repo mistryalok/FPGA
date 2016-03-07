@@ -1,0 +1,7 @@
+V3 3
+FL D:/Aalok/Xilinx/RSFlipflop/RS.vhd 2013/04/04.19:10:51 J.36
+EN work/RSFF 1365082885 FL D:/Aalok/Xilinx/RSFlipflop/RS.vhd \
+      PB ieee/std_logic_1164 1177545575 PB ieee/std_logic_arith 1177545576 \
+      PB ieee/STD_LOGIC_UNSIGNED 1177545583
+AR work/RSFF/Behavioral 1365082886 \
+      FL D:/Aalok/Xilinx/RSFlipflop/RS.vhd EN work/RSFF 1365082885

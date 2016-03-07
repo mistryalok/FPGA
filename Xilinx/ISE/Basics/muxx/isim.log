@@ -1,0 +1,36 @@
+ command line:
+   ./mnop_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  1081
+
+Wed Apr 03 18:04:00 2013
+
+Total Line Count : 48
+
+ Elaboration time : 0.015625 sec.
+
+ Estimate current memory usage : 117.228 Meg. 
+
+ Total Signals          : 6
+ Total Nets             : 7
+ Total Signal Drivers   : 3
+ Total Blocks           : 7
+ Total Primitive Blocks : 1
+ Total Processes        : 2
+ Total Traceable Variables  : 0
+ Total Scalar Nets and Variables : 7
+ntrace select -o on -n /mnop/s 
+ntrace select -o on -n /mnop/a 
+ntrace select -o on -n /mnop/d 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.046875 sec.
+
+ Estimate current memory usage : 123.519 Meg. 
+
+Wed Apr 03 18:04:58 2013
+

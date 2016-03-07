@@ -1,0 +1,6 @@
+AR muxx behavioral D:/Aalok/Xilinx/muxx/muxx.vhd sub00/vhpl01 1364992439
+EN mnop NULL D:/Aalok/Xilinx/muxx/mnop.vhw sub00/vhpl04 1364992440
+EN muxx NULL D:/Aalok/Xilinx/muxx/muxx.vhd sub00/vhpl00 1364992438
+AR gotiu testbench_arch D:/Aalok/Xilinx/muxx/gotiu.vhw sub00/vhpl03 1364992202
+AR mnop testbench_arch D:/Aalok/Xilinx/muxx/mnop.vhw sub00/vhpl05 1364992441
+EN gotiu NULL D:/Aalok/Xilinx/muxx/gotiu.vhw sub00/vhpl02 1364992201

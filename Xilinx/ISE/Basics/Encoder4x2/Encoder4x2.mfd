@@ -1,0 +1,66 @@
+MDF Database:  version 1.0
+MDF_INFO | Encoder4x2 | XA9536XL-15-VQ44
+MACROCELL | 1 | 1 | O_0
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | I<2>  | I<0>  | $OpTx$FX_DC$1  | O_0/O_0_RSTF
+INPUTMC | 2 | 1 | 17 | 1 | 16
+INPUTP | 2 | 42 | 44
+EQ | 4 | 
+   O<0>.D = Gnd;
+   O<0>.CLK = Gnd;
+   O<0>.AP = !I<2> & !I<0> & $OpTx$FX_DC$1;
+   O<0>.AR = O_0/O_0_RSTF;
+
+MACROCELL | 0 | 1 | O_1
+ATTRIBUTES | 8651699 | 0
+INPUTS | 2 | O_1/O_1_SETF  | O_1/O_1_RSTF
+INPUTMC | 2 | 1 | 14 | 1 | 15
+EQ | 4 | 
+   O<1>.D = Gnd;
+   O<1>.CLK = Gnd;
+   O<1>.AP = O_1/O_1_SETF;
+   O<1>.AR = O_1/O_1_RSTF;
+
+MACROCELL | 1 | 17 | $OpTx$FX_DC$1
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 2 | 1 | 1 | 1 | 14
+INPUTS | 2 | I<1>  | I<3>
+INPUTP | 2 | 45 | 37
+EQ | 2 | 
+   $OpTx$FX_DC$1 = I<1>
+	$ I<3>;
+
+MACROCELL | 1 | 16 | O_0/O_0_RSTF
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 2 | 1 | 1 | 1 | 14
+INPUTS | 4 | I<2>  | I<0>  | I<1>  | I<3>
+INPUTP | 4 | 42 | 44 | 45 | 37
+EQ | 2 | 
+   O_0/O_0_RSTF = I<2> & !I<0> & !I<1> & !I<3>
+	# !I<2> & I<0> & !I<1> & !I<3>;
+
+MACROCELL | 1 | 14 | O_1/O_1_SETF
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 5 | I<2>  | O_0/O_0_RSTF  | I<0>  | I<3>  | $OpTx$FX_DC$1
+INPUTMC | 2 | 1 | 16 | 1 | 17
+INPUTP | 3 | 42 | 44 | 37
+EQ | 2 | 
+   O_1/O_1_SETF = I<2> & O_0/O_0_RSTF
+	# !I<2> & !I<0> & I<3> & $OpTx$FX_DC$1;
+
+MACROCELL | 1 | 15 | O_1/O_1_RSTF
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 4 | I<2>  | I<0>  | I<1>  | I<3>
+INPUTP | 4 | 42 | 44 | 45 | 37
+EQ | 2 | 
+   O_1/O_1_RSTF = !I<2> & I<0> & !I<1> & !I<3>
+	# !I<2> & !I<0> & I<1> & !I<3>;
+
+PIN | I<2> | 64 | 0 | N/A | 42 | 4 | 1 | 1 | 1 | 16 | 1 | 14 | 1 | 15
+PIN | I<0> | 64 | 0 | N/A | 44 | 4 | 1 | 1 | 1 | 16 | 1 | 14 | 1 | 15
+PIN | I<1> | 64 | 0 | N/A | 45 | 3 | 1 | 17 | 1 | 16 | 1 | 15
+PIN | I<3> | 64 | 0 | N/A | 37 | 4 | 1 | 17 | 1 | 16 | 1 | 14 | 1 | 15
+PIN | O<0> | 536871040 | 0 | N/A | 5
+PIN | O<1> | 536871040 | 0 | N/A | 8

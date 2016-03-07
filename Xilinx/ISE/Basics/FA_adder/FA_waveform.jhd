@@ -1,0 +1,3 @@
+MODULE FA_waveform
+SUBMODULE FA_adder
+INSTANCE UUT

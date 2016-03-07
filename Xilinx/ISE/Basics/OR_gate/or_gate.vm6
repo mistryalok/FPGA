@@ -1,0 +1,66 @@
+NDS Database:  version J.36
+
+NDS_INFO | xa9500xl | A9536XL44VQ | XA9536XL-15-VQ44
+
+DEVICE | A9536XL | A9536XL44VQ | 
+
+NETWORK | or_gate | 0 | 0 | 16793607
+
+INPUT_INSTANCE | 0 | 0 | NULL | b_IBUF | or_gate_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | b | 27 | PI | 0 | 0 | or_gate_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | b_IBUF | 23 | ? | 0 | 0 | or_gate_COPY_0_COPY_0 | NULL | NULL | b_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | a_IBUF | or_gate_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | a | 28 | PI | 0 | 0 | or_gate_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | a_IBUF | 24 | ? | 0 | 0 | or_gate_COPY_0_COPY_0 | NULL | NULL | a_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | LowPow+Inv+OptxMapped | y_OBUF | or_gate_COPY_0_COPY_0 | 2155872513 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | b_IBUF | 23 | ? | 0 | 0 | or_gate_COPY_0_COPY_0 | NULL | NULL | b_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | a_IBUF | 24 | ? | 0 | 0 | or_gate_COPY_0_COPY_0 | NULL | NULL | a_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | y_OBUF | 25 | ? | 0 | 0 | or_gate_COPY_0_COPY_0 | NULL | y_OBUF.Q | y_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | y_OBUF.SI | y_OBUF | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | b_IBUF | 23 | ? | 0 | 0 | or_gate_COPY_0_COPY_0 | NULL | NULL | b_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | a_IBUF | 24 | ? | 0 | 0 | or_gate_COPY_0_COPY_0 | NULL | NULL | a_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | y_OBUF.D1 | 30 | ? | 0 | 4096 | y_OBUF | NULL | NULL | y_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | y_OBUF.D2 | 31 | ? | 0 | 4096 | y_OBUF | NULL | NULL | y_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | b_IBUF | IV_FALSE | a_IBUF
+
+SRFF_INSTANCE | y_OBUF.REG | y_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | y_OBUF.D | 29 | ? | 0 | 0 | y_OBUF | NULL | NULL | y_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | y_OBUF.Q | 32 | ? | 0 | 0 | y_OBUF | NULL | NULL | y_OBUF.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | y | or_gate_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | y_OBUF | 25 | ? | 0 | 0 | or_gate_COPY_0_COPY_0 | NULL | y_OBUF.Q | y_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | y | 26 | PO | 0 | 0 | or_gate_COPY_0_COPY_0 | NULL | NULL | y | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | or_gate_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | y_OBUF | 1 | NULL | 0 | y | 1 | 41 | 49152
+
+FB_INSTANCE | FOOBAR2_ | or_gate_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 8 | NULL | 0 | b_IBUF | 1 | NULL | 0 | 31 | 49152
+FBPIN | 9 | NULL | 0 | a_IBUF | 1 | NULL | 0 | 30 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR3_ | or_gate_COPY_0_COPY_0 | 0 | 0 | 0
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 2 | b | 31 | 50 | a | 30
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | -1 | 38 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 36 | -1 | -1 | -1
+

@@ -1,0 +1,7 @@
+V3 3
+FL D:/Aalok/Xilinx/encoder8x3/encoder8x3.vhd 2013/04/04.17:59:57 J.36
+EN work/encoder8x3 0 FL D:/Aalok/Xilinx/encoder8x3/encoder8x3.vhd \
+      PB ieee/std_logic_1164 1177545575 PB ieee/std_logic_arith 1177545576 \
+      PB ieee/STD_LOGIC_UNSIGNED 1177545583
+AR work/encoder8x3/Behavioral 0 \
+      FL D:/Aalok/Xilinx/encoder8x3/encoder8x3.vhd EN work/encoder8x3 0

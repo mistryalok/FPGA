@@ -1,0 +1,7 @@
+xst -ise "D:/Aalok/Xilinx/And_gate/And_gate.ise" -intstyle ise -ifn and_gate.xst -ofn and_gate.syr
+ngdbuild -ise "D:/Aalok/Xilinx/And_gate/And_gate.ise" -intstyle ise -dd _ngo -i -p xa9500xl "and_gate.ngc" and_gate.ngd
+cpldfit -ise "D:/Aalok/Xilinx/And_gate/And_gate.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper and_gate.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/And_gate/And_gate.ise" and_gate_build.xml
+tsim -ise "D:/Aalok/Xilinx/And_gate/And_gate.ise" -intstyle ise and_gate and_gate.nga
+taengine -ise "D:/Aalok/Xilinx/And_gate/And_gate.ise" -intstyle ise -f and_gate -w --format html1 -l D:/Aalok/Xilinx/And_gate/and_gate_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/And_gate/And_gate.ise" -s IEEE1149 -i and_gate

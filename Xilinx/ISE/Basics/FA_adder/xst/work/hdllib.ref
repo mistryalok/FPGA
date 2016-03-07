@@ -1,0 +1,6 @@
+EN fa_adder NULL D:/Aalok/Xilinx/FA_adder/FA_adder.vhd sub00/vhpl04 1367499255
+AR ha_adder dataflow D:/Aalok/Xilinx/HA_adder/HA_adder.vhd sub00/vhpl01 1367499224
+AR fa_adder dataflow D:/Aalok/Xilinx/FA_adder/FA_adder.vhd sub00/vhpl05 1367499256
+EN ha_adder NULL D:/Aalok/Xilinx/HA_adder/HA_adder.vhd sub00/vhpl00 1367499223
+EN or_gate NULL D:/Aalok/Xilinx/OR_gate/OR_gate.vhd sub00/vhpl02 1367499225
+AR or_gate dataflow D:/Aalok/Xilinx/OR_gate/OR_gate.vhd sub00/vhpl03 1367499226

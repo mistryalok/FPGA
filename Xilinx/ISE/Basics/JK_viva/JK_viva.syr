@@ -1,0 +1,86 @@
+Release 9.2i - xst J.36
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.72 s | Elapsed : 0.00 / 1.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.72 s | Elapsed : 0.00 / 1.00 s
+ 
+--> Reading design: JK_viva.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "JK_viva.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "JK_viva"
+Output Format                      : NGC
+Target Device                      : Automotive 9500XL
+
+---- Source Options
+Top Module Name                    : JK_viva
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : JK_viva.lso
+Keep Hierarchy                     : YES
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Aalok/Xilinx/JK_viva/JK_viva.vhd" in Library work.
+Entity <JK_viva> compiled.
+ERROR:HDLParsers:3312 - "D:/Aalok/Xilinx/JK_viva/JK_viva.vhd" Line 40. Undefined symbol 's'.
+ERROR:HDLParsers:1209 - "D:/Aalok/Xilinx/JK_viva/JK_viva.vhd" Line 40. s: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1411 - "D:/Aalok/Xilinx/JK_viva/JK_viva.vhd" Line 49. Parameter q of mode out can not be associated with a formal parameter of mode in.
+ERROR:HDLParsers:1411 - "D:/Aalok/Xilinx/JK_viva/JK_viva.vhd" Line 49. Parameter Qn of mode out can not be associated with a formal parameter of mode in.
+WARNING:HDLParsers:1406 - "D:/Aalok/Xilinx/JK_viva/JK_viva.vhd" Line 40. No sensitivity list and no wait in the process
+--> 
+
+Total memory usage is 113760 kilobytes
+
+Number of errors   :    4 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

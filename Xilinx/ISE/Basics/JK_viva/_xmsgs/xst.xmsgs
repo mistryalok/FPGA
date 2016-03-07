@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLParsers" num="3312" delta="new" >&quot;<arg fmt="%s" index="1">D:/Aalok/Xilinx/JK_viva/JK_viva.vhd</arg>&quot; Line <arg fmt="%d" index="2">40</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">s</arg>&apos;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="new" >&quot;<arg fmt="%s" index="1">D:/Aalok/Xilinx/JK_viva/JK_viva.vhd</arg>&quot; Line <arg fmt="%d" index="2">40</arg>. <arg fmt="%s" index="3">s</arg>: Undefined symbol (last report in this block)
+</msg>
+
+<msg type="error" file="HDLParsers" num="1411" delta="new" >&quot;<arg fmt="%s" index="1">D:/Aalok/Xilinx/JK_viva/JK_viva.vhd</arg>&quot; Line <arg fmt="%d" index="2">49</arg>. Parameter <arg fmt="%s" index="3">q</arg> of mode <arg fmt="%s" index="4">out</arg> can not be associated with a formal <arg fmt="%s" index="5">parameter</arg> of mode <arg fmt="%s" index="6">in</arg>.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1411" delta="new" >&quot;<arg fmt="%s" index="1">D:/Aalok/Xilinx/JK_viva/JK_viva.vhd</arg>&quot; Line <arg fmt="%d" index="2">49</arg>. Parameter <arg fmt="%s" index="3">Qn</arg> of mode <arg fmt="%s" index="4">out</arg> can not be associated with a formal <arg fmt="%s" index="5">parameter</arg> of mode <arg fmt="%s" index="6">in</arg>.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="1406" delta="new" >&quot;<arg fmt="%s" index="1">D:/Aalok/Xilinx/JK_viva/JK_viva.vhd</arg>&quot; Line <arg fmt="%d" index="2">40</arg>. No sensitivity list and no wait in the process
+</msg>
+
+</messages>
+

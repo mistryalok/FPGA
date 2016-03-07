@@ -1,0 +1,10 @@
+AR waveform testbench_arch D:/Aalok/Xilinx/MUX4x1/waveform.vhw sub00/vhpl03 1365073411
+EN finalwave NULL D:/Aalok/Xilinx/MUX4x1/Finalwave.vhw sub00/vhpl04 1365073545
+EN wav NULL D:/Aalok/Xilinx/MUX4x1/wav.vhw sub00/vhpl08 1365076094
+EN wa NULL D:/Aalok/Xilinx/MUX4x1/wa.vhw sub00/vhpl06 1365074971
+EN mux4x1 NULL D:/Aalok/Xilinx/MUX4x1/MUX4x1.vhd sub00/vhpl00 1365076092
+AR wa testbench_arch D:/Aalok/Xilinx/MUX4x1/wa.vhw sub00/vhpl07 1365074972
+AR finalwave testbench_arch D:/Aalok/Xilinx/MUX4x1/Finalwave.vhw sub00/vhpl05 1365073546
+AR mux4x1 behavioral D:/Aalok/Xilinx/MUX4x1/MUX4x1.vhd sub00/vhpl01 1365076093
+AR wav testbench_arch D:/Aalok/Xilinx/MUX4x1/wav.vhw sub00/vhpl09 1365076095
+EN waveform NULL D:/Aalok/Xilinx/MUX4x1/waveform.vhw sub00/vhpl02 1365073410

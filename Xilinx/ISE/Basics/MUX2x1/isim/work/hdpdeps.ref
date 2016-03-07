@@ -1,0 +1,20 @@
+V3 10
+FL D:/Aalok/Xilinx/MUX2x1/MUX2x.vhw 2013/04/03.17:19:24 J.36
+EN work/MUX2x 1364989773 FL D:/Aalok/Xilinx/MUX2x1/MUX2x.vhw \
+      PB ieee/std_logic_1164 1179176983 PB ieee/std_logic_arith 1179176985 \
+      PB ieee/STD_LOGIC_UNSIGNED 1179176991 PB ieee/STD_LOGIC_TEXTIO 1179176993 \
+      PB std/textio 1179176969
+AR work/MUX2x/testbench_arch 1364989774 \
+      FL D:/Aalok/Xilinx/MUX2x1/MUX2x.vhw EN work/MUX2x 1364989773 CP MUX2x1
+FL D:/Aalok/Xilinx/MUX2x1/MUX2x1.vhd 2013/04/04.17:18:58 J.36
+EN work/MUX2x1 1365076186 FL D:/Aalok/Xilinx/MUX2x1/MUX2x1.vhd \
+      PB ieee/std_logic_1164 1179176983 PB ieee/std_logic_arith 1179176985 \
+      PB ieee/STD_LOGIC_UNSIGNED 1179176991
+AR work/MUX2x1/Behavioral 1365076187 \
+      FL D:/Aalok/Xilinx/MUX2x1/MUX2x1.vhd EN work/MUX2x1 1365076186
+FL D:/Aalok/Xilinx/MUX2x1/wave.vhw 2013/04/04.17:20:15 J.36
+EN work/wave 1365076220 FL D:/Aalok/Xilinx/MUX2x1/wave.vhw PB ieee/std_logic_1164 1179176983 \
+      PB ieee/std_logic_arith 1179176985 PB ieee/STD_LOGIC_UNSIGNED 1179176991 \
+      PB ieee/STD_LOGIC_TEXTIO 1179176993 PB std/textio 1179176969
+AR work/wave/testbench_arch 1365076221 \
+      FL D:/Aalok/Xilinx/MUX2x1/wave.vhw EN work/wave 1365076220 CP MUX2x1

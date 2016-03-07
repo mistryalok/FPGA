@@ -1,0 +1,8 @@
+EN wave NULL D:/Aalok/Xilinx/dEMUX8x1/wave.vhw sub00/vhpl06 1365078126
+AR wave testbench_arch D:/Aalok/Xilinx/dEMUX8x1/wave.vhw sub00/vhpl07 1365078127
+EN demux1x8 NULL D:/Aalok/Xilinx/dEMUX8x1/demux1x8.vhd sub00/vhpl00 1365078076
+AR wer testbench_arch D:/Aalok/Xilinx/dEMUX8x1/wer.vhw sub00/vhpl05 1365077306
+AR demux1x8 behavioral D:/Aalok/Xilinx/dEMUX8x1/demux1x8.vhd sub00/vhpl01 1365078077
+EN wae NULL D:/Aalok/Xilinx/dEMUX8x1/wae.vhw sub00/vhpl02 1365077253
+EN wer NULL D:/Aalok/Xilinx/dEMUX8x1/wer.vhw sub00/vhpl04 1365077305
+AR wae testbench_arch D:/Aalok/Xilinx/dEMUX8x1/wae.vhw sub00/vhpl03 1365077254

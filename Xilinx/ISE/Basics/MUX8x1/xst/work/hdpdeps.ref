@@ -1,0 +1,6 @@
+V3 5
+FL D:/Aalok/Xilinx/MUX8x1/MUX8x1.vhd 2013/04/04.16:44:17 J.36
+EN work/MUX8x1 0 FL D:/Aalok/Xilinx/MUX8x1/MUX8x1.vhd PB ieee/std_logic_1164 1177545575 \
+      PB ieee/std_logic_arith 1177545576 PB ieee/STD_LOGIC_UNSIGNED 1177545583
+AR work/MUX8x1/Behavioral 0 \
+      FL D:/Aalok/Xilinx/MUX8x1/MUX8x1.vhd EN work/MUX8x1 0 CP mux2x1 CP mux4x1

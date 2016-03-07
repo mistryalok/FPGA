@@ -1,0 +1,18 @@
+xst -ise "D:/Aalok/Xilinx/T_flipflop/T_flipflop.ise" -intstyle ise -ifn T_flipflop.xst -ofn T_flipflop.syr
+xst -ise "D:/Aalok/Xilinx/T_flipflop/T_flipflop.ise" -intstyle ise -ifn T_flipflop.xst -ofn T_flipflop.syr
+ngdbuild -ise "D:/Aalok/Xilinx/T_flipflop/T_flipflop.ise" -intstyle ise -dd _ngo -i -p xa9500xl "T_flipflop.ngc" T_flipflop.ngd
+cpldfit -ise "D:/Aalok/Xilinx/T_flipflop/T_flipflop.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper T_flipflop.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/T_flipflop/T_flipflop.ise" T_flipflop_build.xml
+tsim -ise "D:/Aalok/Xilinx/T_flipflop/T_flipflop.ise" -intstyle ise T_flipflop T_flipflop.nga
+taengine -ise "D:/Aalok/Xilinx/T_flipflop/T_flipflop.ise" -intstyle ise -f T_flipflop -w --format html1 -l D:/Aalok/Xilinx/T_flipflop/T_flipflop_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/T_flipflop/T_flipflop.ise" -s IEEE1149 -i T_flipflop
+xst -ise "D:/Aalok/Xilinx/T_flipflop/T_flipflop.ise" -intstyle ise -ifn T_flipflop.xst -ofn T_flipflop.syr
+xst -ise "D:/Aalok/Xilinx/T_flipflop/T_flipflop.ise" -intstyle ise -ifn T_flipflop.xst -ofn T_flipflop.syr
+xst -ise "D:/Aalok/Xilinx/T_flipflop/T_flipflop.ise" -intstyle ise -ifn T_flipflop.xst -ofn T_flipflop.syr
+ngdbuild -ise "D:/Aalok/Xilinx/T_flipflop/T_flipflop.ise" -intstyle ise -dd _ngo -i -p xa9500xl "T_flipflop.ngc" T_flipflop.ngd
+cpldfit -ise "D:/Aalok/Xilinx/T_flipflop/T_flipflop.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper T_flipflop.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/T_flipflop/T_flipflop.ise" T_flipflop_build.xml
+tsim -ise "D:/Aalok/Xilinx/T_flipflop/T_flipflop.ise" -intstyle ise T_flipflop T_flipflop.nga
+taengine -ise "D:/Aalok/Xilinx/T_flipflop/T_flipflop.ise" -intstyle ise -f T_flipflop -w --format html1 -l D:/Aalok/Xilinx/T_flipflop/T_flipflop_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/T_flipflop/T_flipflop.ise" -s IEEE1149 -i T_flipflop
+xst -ise "D:/Aalok/Xilinx/T_flipflop/T_flipflop.ise" -intstyle ise -ifn T_flipflop.xst -ofn T_flipflop.syr

@@ -1,0 +1,6 @@
+EN wave NULL D:/Aalok/Xilinx/MUX2x1/wave.vhw sub00/vhpl04 1365076220
+EN mux2x NULL D:/Aalok/Xilinx/MUX2x1/MUX2x.vhw sub00/vhpl02 1364989773
+AR wave testbench_arch D:/Aalok/Xilinx/MUX2x1/wave.vhw sub00/vhpl05 1365076221
+EN mux2x1 NULL D:/Aalok/Xilinx/MUX2x1/MUX2x1.vhd sub00/vhpl00 1365076186
+AR mux2x testbench_arch D:/Aalok/Xilinx/MUX2x1/MUX2x.vhw sub00/vhpl03 1364989774
+AR mux2x1 behavioral D:/Aalok/Xilinx/MUX2x1/MUX2x1.vhd sub00/vhpl01 1365076187

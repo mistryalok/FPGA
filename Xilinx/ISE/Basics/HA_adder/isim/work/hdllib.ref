@@ -1,0 +1,4 @@
+AR ha_adder dataflow D:/Aalok/Xilinx/HA_adder/HA_adder.vhd sub00/vhpl01 1367497396
+EN ha_adder_wave NULL D:/Aalok/Xilinx/HA_adder/HA_Adder_wave.vhw sub00/vhpl02 1367497490
+EN ha_adder NULL D:/Aalok/Xilinx/HA_adder/HA_adder.vhd sub00/vhpl00 1367497395
+AR ha_adder_wave testbench_arch D:/Aalok/Xilinx/HA_adder/HA_Adder_wave.vhw sub00/vhpl03 1367497491

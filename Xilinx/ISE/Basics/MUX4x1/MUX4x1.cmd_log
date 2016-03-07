@@ -1,0 +1,34 @@
+xst -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -ifn MUX4x1.xst -ofn MUX4x1.syr
+xst -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -ifn MUX4x1.xst -ofn MUX4x1.syr
+xst -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -ifn MUX4x1.xst -ofn MUX4x1.syr
+xst -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -ifn MUX4x1.xst -ofn MUX4x1.syr
+ngdbuild -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "MUX4x1.ngc" MUX4x1.ngd
+cpldfit -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper MUX4x1.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" MUX4x1_build.xml
+tsim -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise MUX4x1 MUX4x1.nga
+taengine -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -f MUX4x1 -w --format html1 -l D:/Aalok/Xilinx/MUX4x1/MUX4x1_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -s IEEE1149 -i MUX4x1
+xst -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -ifn MUX4x1.xst -ofn MUX4x1.syr
+xst -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -ifn MUX4x1.xst -ofn MUX4x1.syr
+xst -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -ifn MUX4x1.xst -ofn MUX4x1.syr
+ngdbuild -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "MUX4x1.ngc" MUX4x1.ngd
+cpldfit -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper MUX4x1.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" MUX4x1_build.xml
+tsim -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise MUX4x1 MUX4x1.nga
+taengine -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -f MUX4x1 -w --format html1 -l D:/Aalok/Xilinx/MUX4x1/MUX4x1_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -s IEEE1149 -i MUX4x1
+xst -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -ifn MUX4x1.xst -ofn MUX4x1.syr
+xst -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -ifn MUX4x1.xst -ofn MUX4x1.syr
+ngdbuild -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "MUX4x1.ngc" MUX4x1.ngd
+cpldfit -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper MUX4x1.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" MUX4x1_build.xml
+tsim -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise MUX4x1 MUX4x1.nga
+taengine -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -f MUX4x1 -w --format html1 -l D:/Aalok/Xilinx/MUX4x1/MUX4x1_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -s IEEE1149 -i MUX4x1
+xst -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -ifn MUX4x1.xst -ofn MUX4x1.syr
+ngdbuild -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "MUX4x1.ngc" MUX4x1.ngd
+cpldfit -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper MUX4x1.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" MUX4x1_build.xml
+tsim -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise MUX4x1 MUX4x1.nga
+taengine -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -intstyle ise -f MUX4x1 -w --format html1 -l D:/Aalok/Xilinx/MUX4x1/MUX4x1_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/MUX4x1/MUX4x1.ise" -s IEEE1149 -i MUX4x1

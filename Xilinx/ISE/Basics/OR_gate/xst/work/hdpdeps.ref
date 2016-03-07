@@ -1,0 +1,7 @@
+V3 3
+FL D:/Aalok/Xilinx/OR_gate/OR_gate.vhd 2013/05/02.17:36:11 J.36
+EN work/OR_gate 1367496391 FL D:/Aalok/Xilinx/OR_gate/OR_gate.vhd \
+      PB ieee/std_logic_1164 1177545575 PB ieee/std_logic_arith 1177545576 \
+      PB ieee/STD_LOGIC_UNSIGNED 1177545583
+AR work/or_gate/dataflow 1367496392 \
+      FL D:/Aalok/Xilinx/OR_gate/OR_gate.vhd EN work/OR_gate 1367496391

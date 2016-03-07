@@ -1,0 +1,202 @@
+Release 9.2i - xst J.36
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.24 s | Elapsed : 0.00 / 1.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.24 s | Elapsed : 0.00 / 1.00 s
+ 
+--> Reading design: FA_adder.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "FA_adder.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "FA_adder"
+Output Format                      : NGC
+Target Device                      : Automotive 9500XL
+
+---- Source Options
+Top Module Name                    : FA_adder
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : FA_adder.lso
+Keep Hierarchy                     : YES
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Aalok/Xilinx/HA_adder/HA_adder.vhd" in Library work.
+Architecture dataflow of Entity ha_adder is up to date.
+Compiling vhdl file "D:/Aalok/Xilinx/OR_gate/OR_gate.vhd" in Library work.
+Architecture dataflow of Entity or_gate is up to date.
+Compiling vhdl file "D:/Aalok/Xilinx/FA_adder/FA_adder.vhd" in Library work.
+Architecture dataflow of Entity fa_adder is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <FA_adder> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <HA_adder> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <OR_gate> in library <work> (architecture <dataflow>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <FA_adder> in library <work> (Architecture <dataflow>).
+Entity <FA_adder> analyzed. Unit <FA_adder> generated.
+
+Analyzing Entity <HA_adder> in library <work> (Architecture <dataflow>).
+Entity <HA_adder> analyzed. Unit <HA_adder> generated.
+
+Analyzing Entity <OR_gate> in library <work> (Architecture <dataflow>).
+Entity <OR_gate> analyzed. Unit <OR_gate> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <HA_adder>.
+    Related source file is "D:/Aalok/Xilinx/HA_adder/HA_adder.vhd".
+    Found 1-bit xor2 for signal <s>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <HA_adder> synthesized.
+
+
+Synthesizing Unit <OR_gate>.
+    Related source file is "D:/Aalok/Xilinx/OR_gate/OR_gate.vhd".
+Unit <OR_gate> synthesized.
+
+
+Synthesizing Unit <FA_adder>.
+    Related source file is "D:/Aalok/Xilinx/FA_adder/FA_adder.vhd".
+Unit <FA_adder> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1355 - Unit OR_gate is merged (low complexity)
+
+Optimizing unit <FA_adder> ...
+
+Optimizing unit <HA_adder> ...
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : FA_adder.ngr
+Top Level Output File Name         : FA_adder
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : YES
+Target Technology                  : Automotive 9500XL
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 5
+
+Cell Usage :
+# BELS                             : 5
+#      AND2                        : 2
+#      OR2                         : 1
+#      XOR2                        : 2
+# IO Buffers                       : 5
+#      IBUF                        : 3
+#      OBUF                        : 2
+=========================================================================
+CPU : 1.86 / 2.11 s | Elapsed : 1.00 / 2.00 s
+ 
+--> 
+
+Total memory usage is 119064 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

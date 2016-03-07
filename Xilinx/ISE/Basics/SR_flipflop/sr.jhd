@@ -1,0 +1,3 @@
+MODULE sr
+SUBMODULE SR_flipflop
+INSTANCE UUT

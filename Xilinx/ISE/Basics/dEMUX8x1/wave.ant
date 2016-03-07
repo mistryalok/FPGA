@@ -1,0 +1,124 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) 1995-2007 Xilinx, Inc.
+-- All Right Reserved.
+--------------------------------------------------------------------------------
+--   ____  ____ 
+--  /   /\/   / 
+-- /___/  \  /    Vendor: Xilinx 
+-- \   \   \/     Version : 9.2i
+--  \   \         Application : ISE
+--  /   /         Filename : wave.ant
+-- /___/   /\     Timestamp : Thu Apr 04 17:52:00 2013
+-- \   \  /  \ 
+--  \___\/\___\ 
+--
+--Command: 
+--Design Name: wave
+--Device: Xilinx
+--
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY wave IS
+END wave;
+
+ARCHITECTURE testbench_arch OF wave IS
+    FILE RESULTS: TEXT OPEN WRITE_MODE IS "D:\Aalok\Xilinx\dEMUX8x1\wave.ano";
+
+    COMPONENT demux1x8
+        PORT (
+            i : In std_logic;
+            o : Out std_logic_vector (7 DownTo 0);
+            s : In BIT_VECTOR (2 DownTo 0)
+        );
+    END COMPONENT;
+
+    SIGNAL i : std_logic := '0';
+    SIGNAL o : std_logic_vector (7 DownTo 0) := "00000000";
+    SIGNAL s : BIT_VECTOR (2 DownTo 0) := "000";
+
+    SHARED VARIABLE TX_ERROR : INTEGER := 0;
+    SHARED VARIABLE TX_OUT : LINE;
+
+    constant PERIOD : time := 200 ns;
+    constant DUTY_CYCLE : real := 0.5;
+    constant OFFSET : time := 100 ns;
+
+    BEGIN
+        UUT : demux1x8
+        PORT MAP (
+            i => i,
+            o => o,
+            s => s
+        );
+
+        PROCESS    -- clock process for i
+        BEGIN
+            WAIT for OFFSET;
+            CLOCK_LOOP : LOOP
+                i <= '0';
+                WAIT FOR (PERIOD - (PERIOD * DUTY_CYCLE));
+                i <= '1';
+                WAIT FOR (PERIOD * DUTY_CYCLE);
+            END LOOP CLOCK_LOOP;
+        END PROCESS;
+
+        PROCESS    -- Annotation process for i
+            VARIABLE TX_TIME : INTEGER := 0;
+
+            PROCEDURE ANNOTATE_o(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", o, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, o);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+        BEGIN
+            WAIT for 1 fs;
+            ANNOTATE_o(0);
+            WAIT for OFFSET;
+            TX_TIME := TX_TIME + 100;
+            ANNO_LOOP : LOOP
+                --Rising Edge
+                WAIT for 115 ns;
+                TX_TIME := TX_TIME + 115;
+                ANNOTATE_o(TX_TIME);
+                WAIT for 85 ns;
+                TX_TIME := TX_TIME + 85;
+            END LOOP ANNO_LOOP;
+        END PROCESS;
+
+        PROCESS
+            BEGIN
+                -- -------------  Current Time:  585ns
+                WAIT FOR 585 ns;
+                s <= "010";
+                -- -------------------------------------
+                -- -------------  Current Time:  785ns
+                WAIT FOR 200 ns;
+                s <= "000";
+                -- -------------------------------------
+                WAIT FOR 415 ns;
+
+                STD.TEXTIO.write(TX_OUT, string'("Total[]"));
+                STD.TEXTIO.writeline(RESULTS, TX_OUT);
+                ASSERT (FALSE) REPORT
+                    "Success! Simulation for annotation completed"
+                    SEVERITY FAILURE;
+            END PROCESS;
+
+    END testbench_arch;
+

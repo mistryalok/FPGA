@@ -1,0 +1,2 @@
+vhdl work "HA_adder.vhd"
+vhdl work "HA_Adder_wave.vhw"

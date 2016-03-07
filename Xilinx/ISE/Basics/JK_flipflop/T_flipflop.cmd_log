@@ -1,0 +1,5 @@
+xst -ise "D:/Aalok/Xilinx/JK_flipflop/JK_flipflop.ise" -intstyle ise -ifn T_flipflop.xst -ofn T_flipflop.syr
+xst -ise "D:/Aalok/Xilinx/JK_flipflop/JK_flipflop.ise" -intstyle ise -ifn T_flipflop.xst -ofn T_flipflop.syr
+xst -ise "D:/Aalok/Xilinx/JK_flipflop/JK_flipflop.ise" -intstyle ise -ifn T_flipflop.xst -ofn T_flipflop.syr
+xst -ise "D:/Aalok/Xilinx/JK_flipflop/JK_flipflop.ise" -intstyle ise -ifn T_flipflop.xst -ofn T_flipflop.syr
+xst -ise "D:/Aalok/Xilinx/JK_flipflop/JK_flipflop.ise" -intstyle ise -ifn T_flipflop.xst -ofn T_flipflop.syr

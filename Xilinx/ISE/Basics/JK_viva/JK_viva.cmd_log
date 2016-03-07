@@ -1,0 +1,1 @@
+xst -ise "D:/Aalok/Xilinx/JK_viva/JK_viva.ise" -intstyle ise -ifn JK_viva.xst -ofn JK_viva.syr

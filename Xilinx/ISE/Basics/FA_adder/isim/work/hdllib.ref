@@ -1,0 +1,12 @@
+EN fa_structure_wave NULL D:/Aalok/Xilinx/FA_adder/FA_Structure_wave.vhw sub00/vhpl10 1367499310
+AR fa_waveform testbench_arch D:/Aalok/Xilinx/FA_adder/FA_waveform.vhw sub00/vhpl07 1367498795
+EN fa_adder NULL D:/Aalok/Xilinx/FA_adder/FA_adder.vhd sub00/vhpl04 1367499271
+AR ha_adder dataflow D:/Aalok/Xilinx/FA_adder/../HA_adder/HA_adder.vhd sub00/vhpl01 1367499268
+AR fa_structure_wave testbench_arch D:/Aalok/Xilinx/FA_adder/FA_Structure_wave.vhw sub00/vhpl11 1367499311
+EN fa_waveform NULL D:/Aalok/Xilinx/FA_adder/FA_waveform.vhw sub00/vhpl06 1367498794
+AR fa_adder dataflow D:/Aalok/Xilinx/FA_adder/FA_adder.vhd sub00/vhpl05 1367499272
+EN fa_adder_wave NULL D:/Aalok/Xilinx/FA_adder/FA_adder_wave.vhw sub00/vhpl08 1367499273
+AR fa_adder_wave testbench_arch D:/Aalok/Xilinx/FA_adder/FA_adder_wave.vhw sub00/vhpl09 1367499274
+EN ha_adder NULL D:/Aalok/Xilinx/FA_adder/../HA_adder/HA_adder.vhd sub00/vhpl00 1367499267
+EN or_gate NULL D:/Aalok/Xilinx/FA_adder/../OR_gate/OR_gate.vhd sub00/vhpl02 1367499269
+AR or_gate dataflow D:/Aalok/Xilinx/FA_adder/../OR_gate/OR_gate.vhd sub00/vhpl03 1367499270

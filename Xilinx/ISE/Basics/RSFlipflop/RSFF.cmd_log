@@ -1,0 +1,34 @@
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+ngdbuild -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -dd _ngo -i -p xa9500xl "RSFF.ngc" RSFF.ngd
+cpldfit -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper RSFF.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" RSFF_build.xml
+tsim -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise RSFF RSFF.nga
+taengine -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -f RSFF -w --format html1 -l D:/Aalok/Xilinx/RSFlipflop/RSFF_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -s IEEE1149 -i RSFF
+xst -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -ifn RSFF.xst -ofn RSFF.syr
+ngdbuild -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -dd _ngo -i -p xa9500xl "RSFF.ngc" RSFF.ngd
+cpldfit -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper RSFF.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" RSFF_build.xml
+tsim -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise RSFF RSFF.nga
+taengine -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -intstyle ise -f RSFF -w --format html1 -l D:/Aalok/Xilinx/RSFlipflop/RSFF_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/RSFlipflop/RSFlipflop.ise" -s IEEE1149 -i RSFF

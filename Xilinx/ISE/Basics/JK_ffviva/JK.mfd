@@ -1,0 +1,31 @@
+MDF Database:  version 1.0
+MDF_INFO | JK | XA9536XL-15-VQ44
+MACROCELL | 0 | 1 | Q_OBUF
+ATTRIBUTES | 8815363 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 3 | JK<0>  | Q  | JK<1>
+INPUTMC | 1 | 0 | 1
+INPUTP | 2 | 44 | 45
+EQ | 3 | 
+   Q.D = JK<1> & !Q
+	# !JK<0> & Q;
+   Q.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 1 | Qn_OBUF
+ATTRIBUTES | 8815363 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 3 | JK<1>  | Qn  | JK<0>
+INPUTMC | 1 | 1 | 1
+INPUTP | 2 | 45 | 44
+EQ | 3 | 
+   Qn.D = !JK<1> & Qn
+	# JK<0> & !Qn;
+   Qn.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+PIN | JK<1> | 64 | 0 | N/A | 45 | 2 | 0 | 1 | 1 | 1
+PIN | JK<0> | 64 | 0 | N/A | 44 | 2 | 0 | 1 | 1 | 1
+PIN | clk | 4096 | 0 | N/A | 10 | 2 | 0 | 1 | 1 | 1
+PIN | Q | 536871040 | 0 | N/A | 8
+PIN | Qn | 536871040 | 0 | N/A | 5

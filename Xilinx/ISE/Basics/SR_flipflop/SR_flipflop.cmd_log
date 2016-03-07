@@ -1,0 +1,20 @@
+xst -ise "D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.ise" -intstyle ise -ifn SR_flipflop.xst -ofn SR_flipflop.syr
+xst -ise "D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.ise" -intstyle ise -ifn SR_flipflop.xst -ofn SR_flipflop.syr
+xst -ise "D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.ise" -intstyle ise -ifn SR_flipflop.xst -ofn SR_flipflop.syr
+xst -ise "D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.ise" -intstyle ise -ifn SR_flipflop.xst -ofn SR_flipflop.syr
+xst -ise "D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.ise" -intstyle ise -ifn SR_flipflop.xst -ofn SR_flipflop.syr
+xst -ise "D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.ise" -intstyle ise -ifn SR_flipflop.xst -ofn SR_flipflop.syr
+xst -ise "D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.ise" -intstyle ise -ifn SR_flipflop.xst -ofn SR_flipflop.syr
+ngdbuild -ise "D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.ise" -intstyle ise -dd _ngo -i -p xa9500xl "SR_flipflop.ngc" SR_flipflop.ngd
+cpldfit -ise "D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper SR_flipflop.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.ise" SR_flipflop_build.xml
+tsim -ise "D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.ise" -intstyle ise SR_flipflop SR_flipflop.nga
+taengine -ise "D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.ise" -intstyle ise -f SR_flipflop -w --format html1 -l D:/Aalok/Xilinx/SR_flipflop/SR_flipflop_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.ise" -s IEEE1149 -i SR_flipflop
+xst -ise "D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.ise" -intstyle ise -ifn SR_flipflop.xst -ofn SR_flipflop.syr
+ngdbuild -ise "D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.ise" -intstyle ise -dd _ngo -i -p xa9500xl "SR_flipflop.ngc" SR_flipflop.ngd
+cpldfit -ise "D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper SR_flipflop.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.ise" SR_flipflop_build.xml
+tsim -ise "D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.ise" -intstyle ise SR_flipflop SR_flipflop.nga
+taengine -ise "D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.ise" -intstyle ise -f SR_flipflop -w --format html1 -l D:/Aalok/Xilinx/SR_flipflop/SR_flipflop_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/SR_flipflop/SR_flipflop.ise" -s IEEE1149 -i SR_flipflop

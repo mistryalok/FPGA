@@ -1,0 +1,4 @@
+AR decoder3x8 behavioral D:/Aalok/Xilinx/decoder3to8/decoder3x8.vhd sub00/vhpl01 1365077797
+EN decoder3x8 NULL D:/Aalok/Xilinx/decoder3to8/decoder3x8.vhd sub00/vhpl00 1365077796
+EN wave NULL D:/Aalok/Xilinx/decoder3to8/wave.vhw sub00/vhpl02 1365077798
+AR wave testbench_arch D:/Aalok/Xilinx/decoder3to8/wave.vhw sub00/vhpl03 1365077799

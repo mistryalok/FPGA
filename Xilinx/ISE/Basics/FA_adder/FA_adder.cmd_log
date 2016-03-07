@@ -1,0 +1,35 @@
+xst -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -ifn FA_adder.xst -ofn FA_adder.syr
+xst -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -ifn FA_adder.xst -ofn FA_adder.syr
+xst -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -ifn FA_adder.xst -ofn FA_adder.syr
+ngdbuild -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -dd _ngo -i -p xa9500xl "FA_adder.ngc" FA_adder.ngd
+cpldfit -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper FA_adder.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" FA_adder_build.xml
+tsim -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise FA_adder FA_adder.nga
+taengine -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -f FA_adder -w --format html1 -l D:/Aalok/Xilinx/FA_adder/FA_adder_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -s IEEE1149 -i FA_adder
+xst -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -ifn FA_adder.xst -ofn FA_adder.syr
+ngdbuild -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -dd _ngo -i -p xa9500xl "FA_adder.ngc" FA_adder.ngd
+cpldfit -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper FA_adder.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" FA_adder_build.xml
+tsim -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise FA_adder FA_adder.nga
+taengine -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -f FA_adder -w --format html1 -l D:/Aalok/Xilinx/FA_adder/FA_adder_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -s IEEE1149 -i FA_adder
+xst -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -ifn FA_adder.xst -ofn FA_adder.syr
+ngdbuild -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -dd _ngo -i -p xa9500xl "FA_adder.ngc" FA_adder.ngd
+cpldfit -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper FA_adder.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" FA_adder_build.xml
+tsim -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise FA_adder FA_adder.nga
+taengine -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -f FA_adder -w --format html1 -l D:/Aalok/Xilinx/FA_adder/FA_adder_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -s IEEE1149 -i FA_adder
+xst -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -ifn FA_adder.xst -ofn FA_adder.syr
+ngdbuild -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -dd _ngo -i -p xa9500xl "FA_adder.ngc" FA_adder.ngd
+cpldfit -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper FA_adder.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" FA_adder_build.xml
+tsim -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise FA_adder FA_adder.nga
+xst -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -ifn FA_adder.xst -ofn FA_adder.syr
+ngdbuild -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -dd _ngo -i -p xa9500xl "FA_adder.ngc" FA_adder.ngd
+cpldfit -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper FA_adder.ngd
+XSLTProcess -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" FA_adder_build.xml
+tsim -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise FA_adder FA_adder.nga
+taengine -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -intstyle ise -f FA_adder -w --format html1 -l D:/Aalok/Xilinx/FA_adder/FA_adder_html/tim/timing_report.htm
+hprep6 -ise "D:/Aalok/Xilinx/FA_adder/FA_adder.ise" -s IEEE1149 -i FA_adder

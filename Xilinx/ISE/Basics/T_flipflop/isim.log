@@ -1,0 +1,37 @@
+ command line:
+   ./asdf_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  1091
+
+Thu May 02 19:21:16 2013
+
+Total Line Count : 44
+
+ Elaboration time : 0 sec.
+
+ Estimate current memory usage : 117.232 Meg. 
+
+ Total Signals          : 8
+ Total Nets             : 4
+ Total Signal Drivers   : 4
+ Total Blocks           : 7
+ Total Primitive Blocks : 1
+ Total Processes        : 3
+ Total Traceable Variables  : 0
+ Total Scalar Nets and Variables : 4
+ntrace select -o on -n /asdf/clk 
+ntrace select -o on -n /asdf/t 
+ntrace select -o on -n /asdf/q 
+ntrace select -o on -n /asdf/qn 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.046875 sec.
+
+ Estimate current memory usage : 123.523 Meg. 
+
+Thu May 02 19:21:19 2013
+

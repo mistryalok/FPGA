@@ -1,0 +1,94 @@
+MDF Database:  version 1.0
+MDF_INFO | demux1x8 | XA9536XL-15-VQ44
+MACROCELL | 1 | 1 | o_0
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | s<2>  | s<1>  | s<0>  | i
+INPUTP | 4 | 37 | 47 | 42 | 44
+EQ | 4 | 
+   o<0>.D = Gnd;
+   o<0>.CLK = Gnd;
+   o<0>.AP = !s<2> & !s<1> & !s<0> & i;
+   o<0>.AR = !s<2> & !s<1> & !s<0> & !i;
+
+MACROCELL | 1 | 7 | o_1
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | s<2>  | s<1>  | s<0>  | i
+INPUTP | 4 | 37 | 47 | 42 | 44
+EQ | 4 | 
+   o<1>.D = Gnd;
+   o<1>.CLK = Gnd;
+   o<1>.AP = !s<2> & !s<1> & s<0> & i;
+   o<1>.AR = !s<2> & !s<1> & s<0> & !i;
+
+MACROCELL | 1 | 11 | o_2
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | s<2>  | s<1>  | s<0>  | i
+INPUTP | 4 | 37 | 47 | 42 | 44
+EQ | 4 | 
+   o<2>.D = Gnd;
+   o<2>.CLK = Gnd;
+   o<2>.AP = !s<2> & s<1> & !s<0> & i;
+   o<2>.AR = !s<2> & s<1> & !s<0> & !i;
+
+MACROCELL | 1 | 15 | o_3
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | s<2>  | s<1>  | s<0>  | i
+INPUTP | 4 | 37 | 47 | 42 | 44
+EQ | 4 | 
+   o<3>.D = Gnd;
+   o<3>.CLK = Gnd;
+   o<3>.AP = !s<2> & s<1> & s<0> & i;
+   o<3>.AR = !s<2> & s<1> & s<0> & !i;
+
+MACROCELL | 0 | 1 | o_4
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | s<2>  | s<1>  | s<0>  | i
+INPUTP | 4 | 37 | 47 | 42 | 44
+EQ | 4 | 
+   o<4>.D = Gnd;
+   o<4>.CLK = Gnd;
+   o<4>.AP = s<2> & !s<1> & !s<0> & i;
+   o<4>.AR = s<2> & !s<1> & !s<0> & !i;
+
+MACROCELL | 0 | 7 | o_5
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | s<2>  | s<1>  | s<0>  | i
+INPUTP | 4 | 37 | 47 | 42 | 44
+EQ | 4 | 
+   o<5>.D = Gnd;
+   o<5>.CLK = Gnd;
+   o<5>.AP = s<2> & !s<1> & s<0> & i;
+   o<5>.AR = s<2> & !s<1> & s<0> & !i;
+
+MACROCELL | 0 | 11 | o_6
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | s<2>  | s<1>  | s<0>  | i
+INPUTP | 4 | 37 | 47 | 42 | 44
+EQ | 4 | 
+   o<6>.D = Gnd;
+   o<6>.CLK = Gnd;
+   o<6>.AP = s<2> & s<1> & !s<0> & i;
+   o<6>.AR = s<2> & s<1> & !s<0> & !i;
+
+MACROCELL | 0 | 15 | o_7
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | s<2>  | s<1>  | s<0>  | i
+INPUTP | 4 | 37 | 47 | 42 | 44
+EQ | 4 | 
+   o<7>.D = Gnd;
+   o<7>.CLK = Gnd;
+   o<7>.AP = s<2> & s<1> & s<0> & i;
+   o<7>.AR = s<2> & s<1> & s<0> & !i;
+
+PIN | s<2> | 64 | 0 | N/A | 37 | 8 | 1 | 1 | 1 | 7 | 1 | 11 | 1 | 15 | 0 | 1 | 0 | 7 | 0 | 11 | 0 | 15
+PIN | s<1> | 64 | 0 | N/A | 47 | 8 | 1 | 1 | 1 | 7 | 1 | 11 | 1 | 15 | 0 | 1 | 0 | 7 | 0 | 11 | 0 | 15
+PIN | s<0> | 64 | 0 | N/A | 42 | 8 | 1 | 1 | 1 | 7 | 1 | 11 | 1 | 15 | 0 | 1 | 0 | 7 | 0 | 11 | 0 | 15
+PIN | i | 64 | 0 | N/A | 44 | 8 | 1 | 1 | 1 | 7 | 1 | 11 | 1 | 15 | 0 | 1 | 0 | 7 | 0 | 11 | 0 | 15
+PIN | o<0> | 536871040 | 0 | N/A | 5
+PIN | o<1> | 536871040 | 0 | N/A | 45
+PIN | o<2> | 536871040 | 0 | N/A | 41
+PIN | o<3> | 536871040 | 0 | N/A | 33
+PIN | o<4> | 536871040 | 0 | N/A | 8
+PIN | o<5> | 536871040 | 0 | N/A | 14
+PIN | o<6> | 536871040 | 0 | N/A | 19
+PIN | o<7> | 536871040 | 0 | N/A | 27

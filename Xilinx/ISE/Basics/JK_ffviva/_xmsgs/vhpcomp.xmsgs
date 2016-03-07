@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLParsers" num="1202" delta="unknown" >&quot;<arg fmt="%s" index="1">D:/Aalok/Xilinx/JK_ffviva/wa.vhw</arg>&quot; Line <arg fmt="%d" index="2">42</arg>. Redeclaration of symbol <arg fmt="%s" index="3">JK</arg>.
+</msg>
+
+<msg type="error" file="HDLParsers" num="402" delta="unknown" >&quot;<arg fmt="%s" index="1">D:/Aalok/Xilinx/JK_ffviva/wa.vhw</arg>&quot; Line <arg fmt="%d" index="2">54</arg>. <arg fmt="%s" index="3">Component &apos;JK&apos;</arg> <arg fmt="%s" index="4">JK</arg> can not be used as a primary name.
+</msg>
+
+<msg type="error" file="HDLParsers" num="851" delta="unknown" >&quot;<arg fmt="%s" index="1">D:/Aalok/Xilinx/JK_ffviva/wa.vhw</arg>&quot; Line <arg fmt="%d" index="2">52</arg>. Formal <arg fmt="%s" index="3">JK</arg> of <arg fmt="%s" index="4">JK</arg> with no default value must be associated with an actual value.
+</msg>
+
+<msg type="error" file="HDLParsers" num="3260" delta="unknown" >&quot;<arg fmt="%s" index="1">D:/Aalok/Xilinx/JK_ffviva/wa.vhw</arg>&quot; Line <arg fmt="%d" index="2">75</arg>. <arg fmt="%s" index="3">Object</arg> name expected: <arg fmt="%s" index="4">Component &apos;JK&apos;</arg> unexpected.
+</msg>
+
+<msg type="error" file="HDLParsers" num="3260" delta="unknown" >&quot;<arg fmt="%s" index="1">D:/Aalok/Xilinx/JK_ffviva/wa.vhw</arg>&quot; Line <arg fmt="%d" index="2">79</arg>. <arg fmt="%s" index="3">Object</arg> name expected: <arg fmt="%s" index="4">Component &apos;JK&apos;</arg> unexpected.
+</msg>
+
+<msg type="error" file="HDLParsers" num="3260" delta="unknown" >&quot;<arg fmt="%s" index="1">D:/Aalok/Xilinx/JK_ffviva/wa.vhw</arg>&quot; Line <arg fmt="%d" index="2">83</arg>. <arg fmt="%s" index="3">Object</arg> name expected: <arg fmt="%s" index="4">Component &apos;JK&apos;</arg> unexpected.
+</msg>
+
+</messages>
+

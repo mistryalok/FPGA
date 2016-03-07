@@ -1,0 +1,40 @@
+ command line:
+   ./wawe_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  1110
+
+Thu Apr 04 19:17:46 2013
+
+Total Line Count : 62
+
+ Elaboration time : 0 sec.
+
+ Estimate current memory usage : 117.236 Meg. 
+
+ Total Signals          : 14
+ Total Nets             : 7
+ Total Signal Drivers   : 5
+ Total Blocks           : 7
+ Total Primitive Blocks : 1
+ Total Processes        : 3
+ Total Traceable Variables  : 0
+ Total Scalar Nets and Variables : 7
+ntrace select -o on -n /wawe/clk 
+ntrace select -o on -n /wawe/reset 
+ntrace select -o on -n /wawe/set 
+ntrace select -o on -n /wawe/r 
+ntrace select -o on -n /wawe/s 
+ntrace select -o on -n /wawe/q 
+ntrace select -o on -n /wawe/qn 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.03125 sec.
+
+ Estimate current memory usage : 125.624 Meg. 
+
+Thu Apr 04 19:18:01 2013
+

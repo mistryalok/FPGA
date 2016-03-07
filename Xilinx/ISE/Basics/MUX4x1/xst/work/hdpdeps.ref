@@ -1,0 +1,7 @@
+V3 3
+FL D:/Aalok/Xilinx/MUX4x1/MUX4x1.vhd 2013/04/04.17:17:19 J.36
+EN work/MUX4x1 1365076075 FL D:/Aalok/Xilinx/MUX4x1/MUX4x1.vhd \
+      PB ieee/std_logic_1164 1177545575 PB ieee/std_logic_arith 1177545576 \
+      PB ieee/STD_LOGIC_UNSIGNED 1177545583
+AR work/MUX4x1/Behavioral 1365076076 \
+      FL D:/Aalok/Xilinx/MUX4x1/MUX4x1.vhd EN work/MUX4x1 1365076075

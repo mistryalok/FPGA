@@ -1,0 +1,135 @@
+NDS Database:  version J.36
+
+NDS_INFO | xa9500xl | A9536XL44VQ | XA9536XL-15-VQ44
+
+DEVICE | A9536XL | A9536XL44VQ | 
+
+NETWORK | RS_viva | 0 | 0 | 16793607
+
+INPUT_INSTANCE | 0 | 0 | NULL | clk_IBUF | RS_viva_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | clk | 131 | PI | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | FCLKIO_0 | 122 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | Qn__or0000 | RS_viva_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | R | 132 | PI | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | Qn__or0000 | 123 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | NULL | Qn__or0000 | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | S_IBUF | RS_viva_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | S | 133 | PI | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | S_IBUF | 128 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | NULL | S_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | Q_OBUF | RS_viva_COPY_0_COPY_0 | 2155873281 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Qn__or0000 | 123 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | NULL | Qn__or0000 | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q_OBUF.UIM | 125 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | Q_OBUF.Q | Q_OBUF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | S_IBUF | 128 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | NULL | S_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 122 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Q_OBUF | 124 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | Q_OBUF.Q | Q_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Q_OBUF.UIM | 125 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | Q_OBUF.Q | Q_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Q_OBUF.SI | Q_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Qn__or0000 | 123 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | NULL | Qn__or0000 | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q_OBUF.UIM | 125 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | Q_OBUF.Q | Q_OBUF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | S_IBUF | 128 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | NULL | S_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Q_OBUF.D1 | 135 | ? | 0 | 4096 | Q_OBUF | NULL | NULL | Q_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Q_OBUF.D2 | 136 | ? | 0 | 4096 | Q_OBUF | NULL | NULL | Q_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | Qn__or0000 | IV_TRUE | Q_OBUF.UIM
+SPPTERM | 2 | IV_FALSE | Qn__or0000 | IV_TRUE | S_IBUF
+
+SRFF_INSTANCE | Q_OBUF.REG | Q_OBUF | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q_OBUF.D | 134 | ? | 0 | 0 | Q_OBUF | NULL | NULL | Q_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 122 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Q_OBUF.Q | 137 | ? | 0 | 0 | Q_OBUF | NULL | NULL | Q_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | Qn_OBUF | RS_viva_COPY_0_COPY_0 | 2155873281 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Qn_OBUF.UIM | 127 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | Qn_OBUF.Q | Qn_OBUF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | S_IBUF | 128 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | NULL | S_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Qn__or0000 | 123 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | NULL | Qn__or0000 | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 122 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Qn_OBUF | 126 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | Qn_OBUF.Q | Qn_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Qn_OBUF.UIM | 127 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | Qn_OBUF.Q | Qn_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Qn_OBUF.SI | Qn_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Qn_OBUF.UIM | 127 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | Qn_OBUF.Q | Qn_OBUF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | S_IBUF | 128 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | NULL | S_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Qn__or0000 | 123 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | NULL | Qn__or0000 | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Qn_OBUF.D1 | 139 | ? | 0 | 4096 | Qn_OBUF | NULL | NULL | Qn_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Qn_OBUF.D2 | 140 | ? | 0 | 4096 | Qn_OBUF | NULL | NULL | Qn_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | Qn__or0000
+SPPTERM | 2 | IV_TRUE | Qn_OBUF.UIM | IV_FALSE | S_IBUF
+
+SRFF_INSTANCE | Qn_OBUF.REG | Qn_OBUF | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Qn_OBUF.D | 138 | ? | 0 | 0 | Qn_OBUF | NULL | NULL | Qn_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 122 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Qn_OBUF.Q | 141 | ? | 0 | 0 | Qn_OBUF | NULL | NULL | Qn_OBUF.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | Q | RS_viva_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Q_OBUF | 124 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | Q_OBUF.Q | Q_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Q | 129 | PO | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | NULL | Q | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Qn | RS_viva_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Qn_OBUF | 126 | ? | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | Qn_OBUF.Q | Qn_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Qn | 130 | PO | 0 | 0 | RS_viva_COPY_0_COPY_0 | NULL | NULL | Qn | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | RS_viva_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | Q_OBUF | 1 | NULL | 0 | Q | 1 | 41 | 49152
+FBPIN | 3 | NULL | 0 | clk_IBUF | 1 | NULL | 0 | 43 | 57344
+
+FB_INSTANCE | FOOBAR2_ | RS_viva_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | Qn_OBUF | 1 | NULL | 0 | Qn | 1 | 38 | 49152
+FBPIN | 8 | NULL | 0 | S_IBUF | 1 | NULL | 0 | 31 | 49152
+FBPIN | 9 | NULL | 0 | Qn__or0000 | 1 | NULL | 0 | 30 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR3_ | RS_viva_COPY_0_COPY_0 | 0 | 0 | 0
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 1 | Q_OBUF.UIM | NULL | 2 | S | 31 | 50 | R | 30
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | 1 | 38 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 36 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 1 | Qn_OBUF.UIM | NULL | 2 | S | 31 | 50 | R | 30
+
+FB_IMUX_INDEX | FOOBAR2_ | -1 | 19 | 38 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 36 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | clk | 0 | 0

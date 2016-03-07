@@ -1,0 +1,4 @@
+vhdl work "../OR_gate/OR_gate.vhd"
+vhdl work "../HA_adder/HA_adder.vhd"
+vhdl work "FA_adder.vhd"
+vhdl work "FA_adder_wave.vhw"
